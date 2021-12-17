@@ -1,0 +1,407 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+* {
+	font-family: Montserrat, sans-serif, 'regular';
+}
+a:link{
+  color: chocolate;
+}
+a:visited{
+  color: chocolate;
+}
+.App {
+  text-align: center;
+
+}
+.title{
+  margin-bottom: 2vh;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent;
+}
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sidenav {
+  height: 100vh;
+  background-color: transparent;
+  width: 12vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;;
+  margin-top: 20vh;
+  padding-left: 2vh;
+  padding-right: 3vh;
+  align-items: center;
+  justify-content: center;
+}
+#sidenav div {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  padding-bottom: 15px;
+}
+
+#sidenav a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+  color: #818181;
+  display: block;
+}
+
+#sidenav a:hover {
+  color: goldenrod;
+}
+
+.topbar{
+  padding-bottom: 3.5vh;
+  border-bottom: solid black 2px;
+}
+.searchbar {
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  float: none;
+  margin-top: 4vh;
+  
+}
+.searchbar input{
+  width: 50%;
+  height: 20px;
+  margin-right: 10px;
+}
+.searchbar button{
+  height: 28px;
+}
+#titlebar{
+  padding-bottom: 2vh;
+  width: 100%;
+  padding-left: 12vw;
+}
+
+nav div{
+  float: left;
+  display: flex;
+  align-items: left;
+  text-align: left;
+  padding-bottom: 1vh;
+  margin-left: 10px;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+nav button{
+  float: right;
+  display: flex;
+  align-items: right;
+  text-align: left;
+  margin-right: 10px;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+#sidenavbutton{
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	font-size: 20px;
+	z-index: 300;
+	content: "≡";
+  display: none;
+  vertical-align: top;
+}
+
+#signinbutton{
+  border: none;
+  background-color: white;
+  
+}
+#signinbutton:hover{
+  background-color: goldenrod;
+}
+#registerbutton{
+  border: none;
+  background-color: white;
+}
+#registerbutton:hover{
+  background-color: goldenrod;
+}
+#logoutbutton{
+  border: none;
+  background-color: white;
+}
+#logoutbutton:hover{
+  background-color: goldenrod;
+}
+#cartbutton{
+  background-color: gold;
+  margin-right: 2vw;
+}
+
+#invalidlogin {
+  display: none;
+}
+#acnotfound {
+  display: none;
+}
+#acfound {
+  display: none;
+}
+#accreated {
+  display: none;
+}
+
+.btn-block-main{
+  margin-top: 20px;
+}
+
+#logoutbutton{
+  display: none;
+}
+
+#contentdisplay{
+  width: 100vw;
+  justify-content: left;
+  display: flex;
+  flex-flow: wrap;
+  padding-left: 12vw;
+}
+#cartdisplay div{
+  width: 40vw;
+  justify-content: left;
+  display: flex;
+  flex-flow: wrap;
+}
+#desc{
+  width: 40vh;
+  display: none;
+  flex-flow: wrap;
+  padding-left: 12vw;
+}
+#desc img{
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+}
+#desc .imagename{
+  width: 70vw;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+#desc div{
+  margin-bottom: 1vh;
+}
+#desc button{
+  margin-bottom: 5vh;
+}
+.Main {
+  justify-content: left;
+  display: flex;
+  width: 100vw;
+  flex-flow: wrap;
+}
+#maintitle{
+  text-align: left;
+  display: flex;
+  width: 70vw;
+  margin-bottom: 2vh;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+#maintitle:hover{
+  color: burlywood;
+}
+.Main img{
+  margin-bottom: 10px;
+}
+.imagename{
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+}
+.newarrival{
+  color: red;
+  font-weight: bolder;
+}
+.imgbox img{
+  width: 35vh;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+}
+.imgbox{
+  border: solid black 2px;
+  padding-bottom: 10px;
+  margin-right: 5vw;
+  margin-bottom: 2vh;
+  width: 35vh;
+  justify-content: left;
+  align-items: left;
+}
+
+#carttitle{
+  text-align: left;
+  display: flex;
+  width: 70vw;
+  margin-bottom: 2vh;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.Cart {
+  justify-content: left;
+  display: grid;
+  width: 70vw;
+  padding-left: 13vw;
+  flex-flow: wrap;
+}
+#cartpagebutton{
+  height: 2vh;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 12px;
+  border-radius: 25px;
+}
+#backbutton{
+  background-color: white;
+  border-radius: 25px;
+}
+#backbutton:hover{
+  background-color: goldenrod;
+}
+#checkoutbutton{
+  background-color: white;
+  border-radius: 25px;
+}
+#checkoutbutton:hover{
+  background-color: goldenrod;
+}
+.itembox {
+  justify-content: left;
+  display: grid;
+  width: 80%;
+  border: solid black 2px;
+  padding: 1vh;
+  margin-bottom: 2vh;
+}
+.itembox div{
+  margin-bottom: 1vh;
+}
+.itembox button{
+  width: 80px;
+  margin-bottom: 1vh;
+}
+
+.checkout {
+  justify-content: left;
+  display: grid;
+  width: 70vw;
+  flex-flow: wrap;
+}
+.addressinfo{
+  margin-bottom: 1vh;
+}
+.addressinfo input{
+  margin-top: 0.2vh;
+  margin-bottom: 1vh;
+  width: 30vw;
+}
+#checkouttitle{
+  text-align: left;
+  display: flex;
+  width: 70vw;
+  margin-bottom: 2vh;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.orderinfo div{
+  margin-bottom: 5px;
+}
+#ordertitle{
+  margin-bottom: 15px;
+}
+#confirmbutton{
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  width: 80px;
+  font-size: 12px;
+  border-radius: 25px;
+}
+.newcustomer input{
+  margin-top: 0.2vh;
+  margin-bottom: 1vh;
+  width: 15vw;
+}
+#password{
+  margin-bottom: 2vh;
+}
+#usernamewarn{
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+.invoiceitem{
+  display: none;
+}
+.invoiceinfo{
+  margin-bottom: 2vh;
+}
+#okbutton{
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  width: 50px;
+  font-size: 12px;
+  border-radius: 25px;
+}
