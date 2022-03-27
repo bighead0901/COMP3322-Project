@@ -19,7 +19,8 @@
   },
   "scripts": {
     "server": "nodemon src/server.js",
-    "client": "react-scripts start"
+    "client": "react-scripts start",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
