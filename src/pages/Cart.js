@@ -21,7 +21,7 @@ class Cart extends Component {
 
   componentDidMount () {
     var that = this;
-    axios.post('http://localhost:5000/images', {})
+    axios.post('http://18.139.227.169:5000/images', {})
     .then(function (response) {
       that.state.imagedata = response.data;
       console.log(that.state.imagedata);

@@ -31,7 +31,7 @@ class Create extends Component {
     
     var config = {
       method: "post",
-      url: "http://localhost:5000/createac",
+      url: "http://18.139.227.169:5000/createac",
       headers: {
         "Content-Type": "application/json",
       },

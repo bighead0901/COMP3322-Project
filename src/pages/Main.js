@@ -24,7 +24,7 @@ class Main extends Component {
 
   componentDidMount () {
       var that = this;
-      axios.post('http://localhost:5000/images', {})
+      axios.post('http://18.139.227.169:5000/images', {})
       .then(function (response) {
         that.state.imagedata = response.data;
         console.log(that.state.imagedata);
@@ -111,7 +111,7 @@ class Main extends Component {
       mp3.removeChild(mp3.firstChild);
     }
     var tempmp3 = document.createElement('div');
-    var src = "http://localhost:5000/m"+(1+this.state.currentdesc)+".mp3";
+    var src = "http://18.139.227.169:5000/m"+(1+this.state.currentdesc)+".mp3";
     tempmp3.innerHTML = '<audio id="mp3" controls autoPlay><source src='+src+' type="audio/mpeg"></source>Your browser does not support the audio element.</audio>';
     document.getElementById("mp3").appendChild(tempmp3);
     document.getElementById("sidenav").style.display = "none";
@@ -236,7 +236,7 @@ class Main extends Component {
         
         <div id="desc">
           <div onClick={this.deschandler} className="imagename">{this.state.imagedata[this.state.currentdesc].MusicName}</div><br/>
-          <img src={"http://localhost:5000/img_"+(1+this.state.currentdesc)+".jpg"}></img>
+          <img src={"http://18.139.227.169:5000/img_"+(1+this.state.currentdesc)+".jpg"}></img>
           <div id="mp3">
           </div>
           <div >Composer: {this.state.imagedata[this.state.currentdesc].Composer}</div>
@@ -251,7 +251,7 @@ class Main extends Component {
         <div id="contentdisplay">
           <div className="imgbox" id="image1">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[0].MusicName}</a>
-            <img src={"http://localhost:5000/img_1.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_1.jpg"}></img>
             <div className="newarrival" id="new1">{this.state.newarrival[0]}</div>
             <div >Composer: {this.state.imagedata[0].Composer}</div>
             <div >Price: ${this.state.imagedata[0].Price}</div>
@@ -259,7 +259,7 @@ class Main extends Component {
 
           <div className="imgbox" id="image2">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[1].MusicName}</a>
-            <img src={"http://localhost:5000/img_2.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_2.jpg"}></img>
             <div className="newarrival" id="new2">{this.state.newarrival[1]}</div>
             <div >Composer: {this.state.imagedata[1].Composer}</div>
             <div >Price: ${this.state.imagedata[1].Price}</div>
@@ -267,7 +267,7 @@ class Main extends Component {
 
           <div className="imgbox" id="image3">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[2].MusicName}</a>
-            <img src={"http://localhost:5000/img_3.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_3.jpg"}></img>
             <div className="newarrival" id="new3">{this.state.newarrival[2]}</div>
             <div >Composer: {this.state.imagedata[2].Composer}</div>
             <div >Price: ${this.state.imagedata[2].Price}</div>
@@ -275,7 +275,7 @@ class Main extends Component {
 
           <div className="imgbox" id="image4">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[3].MusicName}</a>
-            <img src={"http://localhost:5000/img_4.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_4.jpg"}></img>
             <div className="newarrival" id="new4">{this.state.newarrival[3]}</div>
             <div >Composer: {this.state.imagedata[3].Composer}</div>
             <div >Price: ${this.state.imagedata[3].Price}</div>
@@ -283,7 +283,7 @@ class Main extends Component {
           
           <div className="imgbox" id="image5">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[4].MusicName}</a>
-            <img src={"http://localhost:5000/img_5.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_5.jpg"}></img>
             <div className="newarrival" id="new5">{this.state.newarrival[4]}</div>
             <div >Composer: {this.state.imagedata[4].Composer}</div>
             <div >Price: ${this.state.imagedata[4].Price}</div>
@@ -291,7 +291,7 @@ class Main extends Component {
           
           <div className="imgbox" id="image6">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[5].MusicName}</a>
-            <img src={"http://localhost:5000/img_6.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_6.jpg"}></img>
             <div className="newarrival" id="new6">{this.state.newarrival[5]}</div>
             <div >Composer: {this.state.imagedata[5].Composer}</div>
             <div >Price: ${this.state.imagedata[5].Price}</div>
@@ -299,7 +299,7 @@ class Main extends Component {
           
           <div className="imgbox" id="image7">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[6].MusicName}</a>
-            <img src={"http://localhost:5000/img_7.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_7.jpg"}></img>
             <div className="newarrival" id="new7">{this.state.newarrival[6]}</div>
             <div >Composer: {this.state.imagedata[6].Composer}</div>
             <div >Price: ${this.state.imagedata[6].Price}</div>
@@ -307,7 +307,7 @@ class Main extends Component {
 
           <div className="imgbox" id="image8">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[7].MusicName}</a>
-            <img src={"http://localhost:5000/img_8.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_8.jpg"}></img>
             <div className="newarrival" id="new8">{this.state.newarrival[7]}</div>
             <div >Composer: {this.state.imagedata[7].Composer}</div>
             <div >Price: ${this.state.imagedata[7].Price}</div>
@@ -315,7 +315,7 @@ class Main extends Component {
 
           <div className="imgbox" id="image9">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[8].MusicName}</a>
-            <img src={"http://localhost:5000/img_9.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_9.jpg"}></img>
             <div className="newarrival" id="new9">{this.state.newarrival[8]}</div>
             <div >Composer: {this.state.imagedata[8].Composer}</div>
             <div >Price: ${this.state.imagedata[8].Price}</div>
@@ -323,7 +323,7 @@ class Main extends Component {
 
           <div className="imgbox" id="image10">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[9].MusicName}</a>
-            <img src={"http://localhost:5000/img_10.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_10.jpg"}></img>
             <div className="newarrival" id="new10">{this.state.newarrival[9]}</div>
             <div >Composer: {this.state.imagedata[9].Composer}</div>
             <div >Price: ${this.state.imagedata[9].Price}</div>
@@ -331,7 +331,7 @@ class Main extends Component {
 
           <div className="imgbox" id="image11">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[10].MusicName}</a>
-            <img src={"http://localhost:5000/img_11.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_11.jpg"}></img>
             <div className="newarrival" id="new11">{this.state.newarrival[10]}</div>
             <div >Composer: {this.state.imagedata[10].Composer}</div>
             <div >Price: ${this.state.imagedata[10].Price}</div>
@@ -339,7 +339,7 @@ class Main extends Component {
 
           <div className="imgbox" id="image12">
             <a href="" onClick={this.deschandler} className="imagename">{this.state.imagedata[11].MusicName}</a>
-            <img src={"http://localhost:5000/img_12.jpg"}></img>
+            <img src={"http://18.139.227.169:5000/img_12.jpg"}></img>
             <div className="newarrival" id="new12">{this.state.newarrival[11]}</div>
             <div >Composer: {this.state.imagedata[11].Composer}</div>
             <div >Price: ${this.state.imagedata[11].Price}</div>

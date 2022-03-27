@@ -33,7 +33,7 @@ class Login extends Component {
     
     var config = {
       method: "post",
-      url: "http://localhost:5000/login",
+      url: "http://18.139.227.169:5000/login",
       headers: {
         "Content-Type": "application/json",
       },
@@ -58,7 +58,7 @@ class Login extends Component {
             //get cart data
             var config1 = {
               method: "post",
-              url: "http://localhost:5000/getdata",
+              url: "http://18.139.227.169:5000/getdata",
               headers: {
                 "Content-Type": "application/json",
               },

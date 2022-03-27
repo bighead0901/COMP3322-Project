@@ -116,7 +116,7 @@ function App() {
     var that = this;
     var config = {
       method: "post",
-      url: "http://localhost:5000/savedata",
+      url: "http://18.139.227.169:5000/savedata",
       headers: {
         "Content-Type": "application/json",
       },

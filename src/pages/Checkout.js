@@ -23,7 +23,7 @@ class Checkout extends Component {
 
   componentDidMount () {
     var that = this;
-    axios.post('http://localhost:5000/images', {})
+    axios.post('http://18.139.227.169:5000/images', {})
     .then(function (response) {
       that.state.imagedata = response.data;
       console.log(that.state.imagedata);
@@ -75,7 +75,7 @@ class Checkout extends Component {
       if (username !== "" && password !== ""){
         var config = {
           method: "post",
-          url: "http://localhost:5000/login",
+          url: "http://18.139.227.169:5000/login",
           headers: {
             "Content-Type": "application/json",
           },
@@ -137,7 +137,7 @@ class Checkout extends Component {
                 //create new ac
                 var config = {
                   method: "post",
-                  url: "http://localhost:5000/createac",
+                  url: "http://18.139.227.169:5000/createac",
                   headers: {
                     "Content-Type": "application/json",
                   },
@@ -208,7 +208,7 @@ class Checkout extends Component {
       //update cart data
       var config = {
         method: "post",
-        url: "http://localhost:5000/savedata",
+        url: "http://18.139.227.169:5000/savedata",
         headers: {
           "Content-Type": "application/json",
         },
