@@ -1,4 +1,4 @@
-Sample: https://main.d3fr8u5i09g9bc.amplifyapp.com/
+Sample: http://18.139.227.169:3000/
 
 jQuery: didnt use
 node: 14.17.0
